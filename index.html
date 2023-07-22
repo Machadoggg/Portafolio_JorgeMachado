@@ -15,9 +15,9 @@
   <style type="text/css">
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
-    body {
+    /* body {
       font-family: "Poppins", sans-serif !important;
-    }
+    } */
 
     .font-weight-bold {
       font-weight: 700;
@@ -992,13 +992,13 @@
 
 
     /* start carrousel */
-    .content-all{
-        width: 210px;
-        height: 50px;
-        margin: auto;
-        perspective: 800px;
-        position: relative;
-        margin-top: 50px;
+    .content-all {
+      width: 210px;
+      height: 50px;
+      margin: auto;
+      perspective: 800px;
+      position: relative;
+      margin-top: 50px;
     }
 
     .content-carrousel {
@@ -1008,10 +1008,12 @@
       animation: rotar 30s infinite linear;
       transform-style: preserve-3d;
     }
+
     .content-carrousel:hover {
       animation-play-state: paused;
       cursor: pointer;
     }
+
     .content-carrousel figure {
       width: 100%;
       height: 120px;
@@ -1020,49 +1022,63 @@
       box-shadow: 0px 0px 10px 0px #17a2b8;
       transition: all 300ms;
     }
+
     .content-carrousel figure:hover {
       box-shadow: 0px 0px 0px 0px black;
       transition: all 300ms;
     }
+
     .content-carrousel figure:nth-child(1) {
       transform: rotateY(0deg) translateZ(300px);
     }
+
     .content-carrousel figure:nth-child(2) {
       transform: rotateY(40deg) translateZ(300px);
     }
+
     .content-carrousel figure:nth-child(3) {
       transform: rotateY(80deg) translateZ(300px);
     }
+
     .content-carrousel figure:nth-child(4) {
       transform: rotateY(120deg) translateZ(300px);
     }
+
     .content-carrousel figure:nth-child(5) {
       transform: rotateY(160deg) translateZ(300px);
     }
+
     .content-carrousel figure:nth-child(6) {
       transform: rotateY(200deg) translateZ(300px);
     }
+
     .content-carrousel figure:nth-child(7) {
       transform: rotateY(240deg) translateZ(300px);
     }
+
     .content-carrousel figure:nth-child(8) {
       transform: rotateY(280deg) translateZ(300px);
     }
+
     .content-carrousel figure:nth-child(9) {
       transform: rotateY(320deg) translateZ(300px);
     }
+
     .content-carrousel figure:nth-child(10) {
       transform: rotateY(360deg) translateZ(300px);
     }
+
     .content-carrousel img {
       width: 100%;
       height: 110%;
       transition: all 300ms;
     }
+
     .content-carrousel img:hover {
       transform: scale(1.1);
       transition: all 300ms;
     }
+
     @keyframes rotar {
       from {
         transform: rotateY(0deg);
@@ -1072,12 +1088,102 @@
         transform: rotateY(360deg);
       }
     }
+
     /* end carrousel */
 
 
-    main{
+    main {
       background-color: whitesmoke;
     }
+
+    /*Iconos de las redes sociales*/
+    .container-redes {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .container-redes a {
+      margin-top: 4px;
+    }
+
+    .container-redes img {
+      width: 60px;
+      padding: 4px;
+      background: rgba(0, 0, 0, 0.0);
+      cursor: pointer;
+      border-radius: 100%;
+      transition: all 300ms;
+    }
+
+    .container-redes a:hover img {
+      background: rgba(0, 0, 0, 0.10);
+    }
+
+
+
+    /* .dark-mode-button {
+      position: absolute;
+      top: 75px;
+      left: 1440px;
+      padding: 20px;
+      background: #17a2b8;
+    }
+
+    html.dark-mode {
+      filter: invert(100%);
+    } */
+
+    /* html.dark-mode img {
+      filter: invert(100%);
+    } */
+
+
+
+
+
+
+
+
+    /* Estilos para el modo claro (por defecto) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+
+/* Estilos para el modo oscuro */
+html.dark-mode body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+html.dark-mode header, html.dark-mode main, html.dark-mode footer {
+  background-color: #333333;
+}
+
+.dark-mode-button {
+      position: fixed;
+      top: 60px;
+      right: 0px;
+      padding:5px;
+      background: #17a2b8;
+      width: 125px;
+      height: 35px;
+    }
+
+
+
+
+
+
+
+
+
 
   </style>
 </head>
@@ -1140,11 +1246,41 @@
             </div>
           </div>
         </div>
+
+
+
+        <label for="dark-mode" class="dark-mode-button">
+          
+          <input id="dark-mode" type="checkbox" 
+          onclick="document.documentElement.classList.toggle('dark-mode')">
+          Modo oscuro
+        </label>
+
+
         <!-- <div class="col-md-12 d-flex flex-column justify-content-end align-items-end">
           <a rel="nofollow" target="_blank" href="https://www.freepik.es/psd/tecnologia"
             style="color: #2b2b2b; margin-right: 1rem;">Psd de Tecnología creado por freepik - www.freepik.es</a>
         </div> -->
       </div>
+
+      <!--container-redes-sociales-->
+
+      <div class="container-redes">
+
+        <a href="https://api.whatsapp.com/send?phone=3017712455&text=¿Qué servicios ofrecen?" target="_blank">
+
+          <img src="icon/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt="">
+
+        </a>
+
+        <a href="https://www.messenger.com/t/1520236682" target="_blank">
+
+          <img src="icon/icon-messenger.png" alt="" title="Enviar mensaje por Messenger">
+
+        </a>
+
+      </div>
+
     </div>
   </header>
 
@@ -1161,26 +1297,26 @@
         </div>
 
         <div class="row">
-            <!-- <h2>Carrousel Projects</h2> -->
-            <div class="content-all">
-              <div class="content-carrousel">
-                <figure><img src="img/BlazorPage.png"></figure>
-                <figure><img src="img/BlazorPage.png"></figure>
-                <figure><img src="img/BlazorPage.png"></figure>
-                <figure><img src="img/BlazorPage.png"></figure>
-                <figure><img src="img/BlazorPage.png"></figure>
-                <figure><img src="img/BlazorPage.png"></figure>
-                <figure><img src="img/BlazorPage.png"></figure>
-                <figure><img src="img/BlazorPage.png"></figure>
-                <figure><img src="img/BlazorPage.png"></figure>
-                <!-- <figure><img src="img/img5.jpg"></figure>
+          <!-- <h2>Carrousel Projects</h2> -->
+          <div class="content-all">
+            <div class="content-carrousel">
+              <figure><img src="img/BlazorPage.png"></figure>
+              <figure><img src="img/BlazorPage.png"></figure>
+              <figure><img src="img/BlazorPage.png"></figure>
+              <figure><img src="img/BlazorPage.png"></figure>
+              <figure><img src="img/BlazorPage.png"></figure>
+              <figure><img src="img/BlazorPage.png"></figure>
+              <figure><img src="img/BlazorPage.png"></figure>
+              <figure><img src="img/BlazorPage.png"></figure>
+              <figure><img src="img/BlazorPage.png"></figure>
+              <!-- <figure><img src="img/img5.jpg"></figure>
                 <figure><img src="img/img6.jpg"></figure>
                 <figure><img src="img/img7.jpg"></figure>
                 <figure><img src="img/img8.jpg"></figure>
                 <figure><img src="img/img9.jpg"></figure>
                 <figure><img src="img/img10.jpg"></figure> -->
-              </div>
             </div>
+          </div>
         </div>
         <br><br><br><br><br><br><br>
 
@@ -1312,7 +1448,7 @@
 
 
 
-    <section id="precios" class="col-md-11" style="margin: auto;">
+    <section id="precios" class="col-md-10" style="margin: auto;">
       <div class="container-fluid my-5">
         <div class="text-center mb-5">
           <h1 class="text-capitalize font-weight-bold mt-2">Conoce <span style="color:#17a2b8">Mis Proyectos</span></h1>
@@ -1833,8 +1969,11 @@
       prevScrollpos = currentScrollPos;
     }
 
-
-
+    
+      function toggleDarkMode() {
+        const htmlElement = document.querySelector('html');
+        htmlElement.classList.toggle('dark-mode');
+      }
 
   </script>
 
