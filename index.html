@@ -39,6 +39,7 @@
       padding-top: 0.7rem !important;
       padding-bottom: 0.7rem !important;
       transition: top 0.3s;
+      height: 60px;
     }
 
     .bg-gris {
@@ -971,11 +972,11 @@
     }
 
     #container {
-      border: 4px solid black;
+      border: 2px solid #17a2b8;
       width: 100%;
-      height: 60px;
+      height: 50px;
       position: fixed;
-      background-color: black;
+      background-color: #17a2b8;
     }
 
     img {
@@ -983,7 +984,7 @@
       width: 50px;
       float: left;
       margin-left: 3px;
-      margin-top: -7px;
+      margin-top: 0px;
       position: relative;
     }
 
@@ -1125,22 +1126,6 @@
 
 
 
-    /* .dark-mode-button {
-      position: absolute;
-      top: 75px;
-      left: 1440px;
-      padding: 20px;
-      background: #17a2b8;
-    }
-
-    html.dark-mode {
-      filter: invert(100%);
-    } */
-
-    /* html.dark-mode img {
-      filter: invert(100%);
-    } */
-
 
 
 
@@ -1155,11 +1140,10 @@ body {
 }
 
 
-
 /* Estilos para el modo oscuro */
 html.dark-mode body {
   background-color: #1a1a1a;
-  color: #ffffff;
+  color: #494f50;
 }
 
 html.dark-mode header, html.dark-mode main, html.dark-mode footer {
@@ -1167,20 +1151,17 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
 }
 
 .dark-mode-button {
-      position: fixed;
+      /* position: absolute;
       top: 60px;
       right: 0px;
-      padding:5px;
+      padding:5px; */
       background: #17a2b8;
-      width: 125px;
+      width: auto;
       height: 35px;
+      padding: 5px;
+      right: 0px;
+      border-radius: 10px;
     }
-
-
-
-
-
-
 
 
 
@@ -1210,12 +1191,25 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
               <a class="nav-link" aria-current="page" href="#galeria">Galeria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#precios">Proyectos</a>
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tecnologias">Tecnologías</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contacto">Contacto</a>
             </li>
+            <li>
+
+              
+
+            </li>
           </ul>
+          <label for="dark-mode" class="dark-mode-button">
+            <input id="dark-mode" type="checkbox" 
+            onclick="document.documentElement.classList.toggle('dark-mode')">
+            Modo oscuro
+          </label>
           <!-- <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#8c8c8c" class="bi bi-intersect"
             viewBox="0 0 16 16">
             <path
@@ -1249,12 +1243,7 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
 
 
 
-        <label for="dark-mode" class="dark-mode-button">
-          
-          <input id="dark-mode" type="checkbox" 
-          onclick="document.documentElement.classList.toggle('dark-mode')">
-          Modo oscuro
-        </label>
+        
 
 
         <!-- <div class="col-md-12 d-flex flex-column justify-content-end align-items-end">
@@ -1287,7 +1276,36 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
 
 
   <main>
-    <div class="container-fluid bg-secondary" style="height: 50px;"></div>
+    <!-- <div class="container-fluid bg-secondary" style="height: 50px;"></div> -->
+
+    
+    <div class="container my-5 pt-4">
+      <section id="tecnologias">
+        <div class="text-center mb-5 col-md-10 mx-auto">
+          <h2 class="font-weight-bold display-4 ">Tecnologías <span style="color: #17a2b8">Usadas</span></h2>
+        </div>
+
+        <div class="row">
+          <!-- <h2>Carrousel Projects</h2> -->
+          <div class="content-all">
+            <div class="content-carrousel">
+              <figure><img src="img/Vs.png"></figure>
+              <figure><img src="img/DotNet.jpg"></figure>
+              <figure><img src="img/Linq.jpg"></figure>
+              <figure><img src="img/Git.png"></figure>
+              <figure><img src="img/VsCode.jpg"></figure>
+              <figure><img src="img/Web.jpg"></figure>
+              <figure><img src="img/Sql.png"></figure>
+              <figure><img src="img/Blazor.png"></figure>
+              <figure><img src="img/Soap.png"></figure>
+            </div>
+          </div>
+        </div>
+        <br><br><br><br><br><br><br>
+      </div>
+    </section>
+
+
     <div class="container my-5 pt-4">
       <section>
         <div class="text-center mb-5 col-md-10 mx-auto">
@@ -1295,31 +1313,6 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
           <p class="mx-5 text-secondary">Estos 3 servicios son mis fuertes pero si tienes una necesidad diferente puedes
             contactarme y con gusto te ofrezco una solución adecuada.</p>
         </div>
-
-        <div class="row">
-          <!-- <h2>Carrousel Projects</h2> -->
-          <div class="content-all">
-            <div class="content-carrousel">
-              <figure><img src="img/BlazorPage.png"></figure>
-              <figure><img src="img/BlazorPage.png"></figure>
-              <figure><img src="img/BlazorPage.png"></figure>
-              <figure><img src="img/BlazorPage.png"></figure>
-              <figure><img src="img/BlazorPage.png"></figure>
-              <figure><img src="img/BlazorPage.png"></figure>
-              <figure><img src="img/BlazorPage.png"></figure>
-              <figure><img src="img/BlazorPage.png"></figure>
-              <figure><img src="img/BlazorPage.png"></figure>
-              <!-- <figure><img src="img/img5.jpg"></figure>
-                <figure><img src="img/img6.jpg"></figure>
-                <figure><img src="img/img7.jpg"></figure>
-                <figure><img src="img/img8.jpg"></figure>
-                <figure><img src="img/img9.jpg"></figure>
-                <figure><img src="img/img10.jpg"></figure> -->
-            </div>
-          </div>
-        </div>
-        <br><br><br><br><br><br><br>
-
         <div class="row">
           <div class="col-md-4 my-4 ">
             <div class="text-dark">
@@ -1327,18 +1320,11 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
                 <div
                   class="font-weight-bold circle rounded-circle d-flex align-items-center justify-content-center mx-auto my-3"
                   style="width: 60px;height: 60px;">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                    class="bi bi-camera" viewBox="0 0 16 16">
-                    <path
-                      d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
-                    <path
-                      d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
-                  </svg>
+                  <img src="https://icons.iconarchive.com/icons/iconoir-team/iconoir/128/code-brackets-square-icon.png" width="128" height="128">
                 </div>
                 <div class="px-3 text-center pb-3">
                   <h5 class="text-uppercase" style="font-weight: 600">API Rest</h5>
-                  <p class="font-weight-light my-3">¿Quiéres vender más? Yo te ayudo a dar a conocer tus platillos
-                    haciéndolos más apetecibles.</p>
+                  <p class="font-weight-light my-3">La integración permite conectar sus plataformas ya existentes con las nuevas tecnologías.</p>
                 </div>
               </div>
             </div>
@@ -1349,16 +1335,11 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
                 <div
                   class="font-weight-bold circle rounded-circle d-flex align-items-center justify-content-center mx-auto my-3"
                   style="width: 60px;height: 60px;">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                    class="bi bi-person-hearts" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M11.5 1.246c.832-.855 2.913.642 0 2.566-2.913-1.924-.832-3.421 0-2.566ZM9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276ZM15 2.165c.555-.57 1.942.428 0 1.711-1.942-1.283-.555-2.281 0-1.71Z" />
-                  </svg>
+                  <img src="https://icons.iconarchive.com/icons/iconoir-team/iconoir/128/code-brackets-square-icon.png" width="128" height="128">
                 </div>
                 <div class="px-3 text-center pb-3">
                   <h5 class="text-uppercase" style="font-weight: 600">Web Applications</h5>
-                  <p class="font-weight-light my-3">Déjame contar tu increíble historia de amor en imágenes con un
-                    estilo único.</p>
+                  <p class="font-weight-light my-3">Mi objetivo es desarrollar aplicaciones que fortalezcan la marca de su empresa mientras la hace más accesible y facíl de usar.</p>
                 </div>
               </div>
             </div>
@@ -1369,16 +1350,11 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
                 <div
                   class="font-weight-bold circle rounded-circle d-flex align-items-center justify-content-center mx-auto my-3"
                   style="width: 60px;height: 60px;">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
-                    class="bi bi-balloon" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M8 9.984C10.403 9.506 12 7.48 12 5a4 4 0 0 0-8 0c0 2.48 1.597 4.506 4 4.984ZM13 5c0 2.837-1.789 5.227-4.52 5.901l.244.487a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.244-.487C4.789 10.227 3 7.837 3 5a5 5 0 0 1 10 0Zm-6.938-.495a2.003 2.003 0 0 1 1.443-1.443C7.773 2.994 8 2.776 8 2.5c0-.276-.226-.504-.498-.459a3.003 3.003 0 0 0-2.46 2.461c-.046.272.182.498.458.498s.494-.227.562-.495Z" />
-                  </svg>
+                  <img src="https://icons.iconarchive.com/icons/iconoir-team/iconoir/128/code-brackets-square-icon.png" width="128" height="128">
                 </div>
                 <div class="px-3 text-center pb-3">
                   <h5 class="text-uppercase" style="font-weight: 600">Mobile Apps</h5>
-                  <p class="font-weight-light my-3">También cubro eventos sociales preservando tus recuerdos en las
-                    mejores fotografías.</p>
+                  <p class="font-weight-light my-3">La portabilidad es un tema importante que su empresa debe suministrar a los usuarios.</p>
                 </div>
               </div>
             </div>
@@ -1391,7 +1367,7 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
 
 
 
-    <section id="galeria">
+    <!-- <section id="galeria">
       <div class="container-fluid d-flex flex-column justify-content-center contenedor2">
         <div class="col-12 d-flex flex-row justify-content-between mw-100 flex-wrap">
           <div class="a1">
@@ -1408,7 +1384,7 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
           <div class="c"></div>
         </div>
         <div class="col-12 d-flex flex-row justify-content-between mw-100 flex-wrap mt-4">
-          <!-- <div class="columna1">
+          <div class="columna1">
             <div class="d1">
               <h2 class="text-capitalize font-weight-bold mt-2 dt text-light">Blazor Components</h2>
               <div class="d"></div>
@@ -1427,8 +1403,8 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
               <h2 class="text-capitalize font-weight-bold mt-2 gt text-light">Web App SALES</h2>
               <div class="g"></div>
             </div>
-          </div> -->
-          <!-- <div class="col-12 d-flex flex-row justify-content-between mw-100 flex-wrap mt-4">
+          </div>
+          <div class="col-12 d-flex flex-row justify-content-between mw-100 flex-wrap mt-4">
             <div class="h1">
               <h2 class="text-capitalize font-weight-bold mt-2 ht text-light">API Rest Swagger</h2>
               <div class="h"></div>
@@ -1441,15 +1417,15 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
               <h2 class="text-capitalize font-weight-bold mt-2 jt text-light">API Rest Swagger</h2>
               <div class="j"></div>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
 
-    <section id="precios" class="col-md-10" style="margin: auto;">
-      <div class="container-fluid my-5">
+    <section id="proyectos" class="col-md-10" style="margin: auto;">
+      <div class="container-fluid my-6">
         <div class="text-center mb-5">
           <h1 class="text-capitalize font-weight-bold mt-2">Conoce <span style="color:#17a2b8">Mis Proyectos</span></h1>
         </div>
@@ -1457,7 +1433,7 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
           <div class="col-md-4 p-4">
             <div class="border">
               <div class="position-relative w-100"
-                style="height: 250px;background-image: url(img/1.jpg); background-size: cover; background-position: center;">
+                style="height: 250px;background-image: url(img/Sales_Der.png); background-size: cover; background-position: center;">
                 <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;"></div>
                 <div
                   class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
@@ -1473,7 +1449,7 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
                 </span>
                 <p class="tex-secondary">Ideal para restaurantes que quieren darse a conocer en redes sociales. Precios
                   varian según necesidad.</p>
-                <!-- <div class="d-flex mt-4">
+               <div class="d-flex mt-4">
                   <div class="d-flex align-items-center mr-4">
                     <small class="mt-1" style="color: #17a2b8;"><b>Entre $40.00 y $80.00</b></small>
                   </div>
@@ -1488,14 +1464,14 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
                       <small class="mt-1" style="color: #00695c;">Cotiza tu evento</small>
                     </div>
                   </a>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 p-4">
             <div class="border">
               <div class="position-relative w-100"
-                style="height: 250px;background-image: url(img/2.jpg); background-size: cover; background-position: center;">
+                style="height: 250px;background-image: url(img/Codigo.png); background-size: cover; background-position: center;">
                 <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;"></div>
                 <div
                   class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
@@ -1511,7 +1487,7 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
                 </span>
                 <p class="tex-secondary">Si buscas inmortalizar los recuerdos de tu boda puedes contar con mi
                   profesionalismo. Precios varian según necesidad.</p>
-                <!-- <div class="d-flex mt-4">
+                <div class="d-flex mt-4">
                   <div class="d-flex align-items-center mr-4">
                     <small class="mt-1" style="color: #17a2b8;"><b>Entre $100.00 y $250.00</b></small>
                   </div>
@@ -1526,14 +1502,14 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
                       <small class="mt-1" style="color: #00695c;">Cotiza tu evento</small>
                     </div>
                   </a>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4 p-4">
             <div class="border">
               <div class="position-relative w-100"
-                style="height: 250px;background-image: url(img/3.jpg); background-size: cover; background-position: center;">
+                style="height: 250px;background-image: url(img/Test.png); background-size: cover; background-position: center;">
                 <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;"></div>
                 <div
                   class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
@@ -1573,7 +1549,7 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
           <div class="col-md-4 p-4">
             <div class="border">
               <div class="position-relative w-100"
-                style="height: 250px;background-image: url(img/1.jpg); background-size: cover; background-position: center;">
+                style="height: 250px;background-image: url(img/BlazorPage.png); background-size: cover; background-position: center;">
                 <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;"></div>
                 <div
                   class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
@@ -1611,7 +1587,7 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
           <div class="col-md-4 p-4">
             <div class="border">
               <div class="position-relative w-100"
-                style="height: 250px;background-image: url(img/2.jpg); background-size: cover; background-position: center;">
+                style="height: 250px;background-image: url(img/BlazorPage.png); background-size: cover; background-position: center;">
                 <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;"></div>
                 <div
                   class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
@@ -1649,7 +1625,7 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
           <div class="col-md-4 p-4">
             <div class="border">
               <div class="position-relative w-100"
-                style="height: 250px;background-image: url(img/3.jpg); background-size: cover; background-position: center;">
+                style="height: 250px;background-image: url(img/BlazorPage.png); background-size: cover; background-position: center;">
                 <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;"></div>
                 <div
                   class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
@@ -1974,6 +1950,17 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
         const htmlElement = document.querySelector('html');
         htmlElement.classList.toggle('dark-mode');
       }
+
+
+
+
+     
+
+
+
+
+
+
 
   </script>
 
