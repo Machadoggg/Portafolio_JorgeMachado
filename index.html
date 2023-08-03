@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -1135,23 +1136,25 @@
 
 
     /* Estilos para el modo claro (por defecto) */
-body {
-  background-color: #ffffff;
-  color: #000000;
-}
+    body {
+      background-color: #ffffff;
+      color: #000000;
+    }
 
 
-/* Estilos para el modo oscuro */
-html.dark-mode body {
-  background-color: #1a1a1a;
-  color: #fff;
-}
+    /* Estilos para el modo oscuro */
+    html.dark-mode body {
+      background-color: #1a1a1a;
+      color: #fff;
+    }
 
-html.dark-mode header, html.dark-mode main, html.dark-mode footer {
-  background-color: #333333;
-}
+    html.dark-mode header,
+    html.dark-mode main,
+    html.dark-mode footer {
+      background-color: #333333;
+    }
 
-.dark-mode-button {
+    .dark-mode-button {
       /* position: absolute;
       top: 60px;
       right: 0px;
@@ -1164,201 +1167,209 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
       border-radius: 10px;
     }
 
-.contenedor{
-  background-color: #17a2b8;
-}
-
-
+    .contenedor {
+      background-color: #17a2b8;
+    }
   </style>
 </head>
 
 <body>
   <div class="contenedor">
-  <header>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div id="container" class="container-fluid fixed-top">
-        <img src="http://icons.iconarchive.com/icons/sirubico/black-metal/128/Web-b-icon.png">&nbsp;&nbsp;&nbsp;
-        <span class="navbar-brand" href="#">
-          <strong>Portafolio Jorge Machado</strong>
-        </span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText" style="z-index: 10;">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!-- <li class="nav-item">
+    <header>
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div id="container" class="container-fluid fixed-top">
+          <img src="http://icons.iconarchive.com/icons/sirubico/black-metal/128/Web-b-icon.png">&nbsp;&nbsp;&nbsp;
+          <span class="navbar-brand" href="#">
+            <strong>Portafolio Jorge Machado</strong>
+          </span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText" style="z-index: 10;">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#galeria">Galeria</a>
             </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tecnologias">Tecnologías</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
-          </ul>
-          <label for="dark-mode" class="dark-mode-button">
-            <input id="dark-mode" type="checkbox" 
-            onclick="document.documentElement.classList.toggle('dark-mode')">
-            Modo oscuro
-          </label>
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#8c8c8c" class="bi bi-intersect"
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tecnologias">Tecnologías</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+            <label for="dark-mode" class="dark-mode-button">
+              <input id="dark-mode" type="checkbox" onclick="document.documentElement.classList.toggle('dark-mode')">
+              Modo oscuro
+            </label>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#8c8c8c" class="bi bi-intersect"
             viewBox="0 0 16 16">
             <path
               d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2H5zm6-8V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2V6a2 2 0 0 1 2-2h5z" />
           </svg> -->
-        </div>
-      </div>
-    </nav>
-
-    <div
-      style="height: 100vh; background-image: url(img/fondo.jpg); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;"
-      class="position-relative w-100">
-      <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-between"
-        style="top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.4); height: 100vh;">
-        <div class="container d-flex flex-row justify-content-between" style="height: 100%;">
-          <div class="col-md-6 d-flex flex-column justify-content-center num1">
-            <span style="color: #bbb;" class="text-uppercase">Bienvenido a mi portafolio</span>
-            <h1 class="mb-4 mt-2 display-4 font-weight-bold">Desarrollo de <span style="color: #17a2b8;">Software</span>
-            </h1>
-            <p style="color: #bbb;">Gracias por venir hasta aquí y conocer más sobre mi trabajo.</p>
-            <p style="color: #bbb;">Si deseas comunicarte directamente presiona el botón de abajo.</p>
-            <div class="mt-4">
-              <a id="toastbtn" href="#" class="btn px-4 py-2 text-white mt-3 mt-sm-0"
-                style="background-color: #00695c!important; border-radius: 20px;"><strong
-                  style="font-size: 1.3rem;">WhatsApp</strong></a>
-            </div>
           </div>
         </div>
+      </nav>
+
+      <div
+        style="height: 100vh; background-image: url(img/fondo.jpg); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;"
+        class="position-relative w-100">
+        <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-between"
+          style="top: 0; right: 0; bottom: 0; left: 0; background-color: rgba(0,0,0,.4); height: 100vh;">
+          <div class="container d-flex flex-row justify-content-between" style="height: 100%;">
+            <div class="col-md-6 d-flex flex-column justify-content-center num1">
+              <span style="color: #bbb;" class="text-uppercase">Bienvenido a mi portafolio</span>
+              <h1 class="mb-4 mt-2 display-4 font-weight-bold">Desarrollo de <span
+                  style="color: #17a2b8;">Software</span>
+              </h1>
+              <p style="color: #bbb;">Gracias por venir hasta aquí y conocer más sobre mi trabajo.</p>
+              <!-- <p style="color: #bbb;">Si deseas comunicarte directamente presiona el botón de abajo.</p> -->
+              <!-- <div class="mt-4">
+                <a id="toastbtn" href="#" class="btn px-4 py-2 text-white mt-3 mt-sm-0"
+                  style="background-color: #00695c!important; border-radius: 20px;"><strong
+                    style="font-size: 1.3rem;">WhatsApp</strong></a>
+              </div> -->
+            </div>
+          </div>
 
 
 
-        
 
 
-        <!-- <div class="col-md-12 d-flex flex-column justify-content-end align-items-end">
+
+          <!-- <div class="col-md-12 d-flex flex-column justify-content-end align-items-end">
           <a rel="nofollow" target="_blank" href="https://www.freepik.es/psd/tecnologia"
             style="color: #2b2b2b; margin-right: 1rem;">Psd de Tecnología creado por freepik - www.freepik.es</a>
         </div> -->
-      </div>
-
-      <!--container-redes-sociales-->
-
-      <div class="container-redes">
-
-        <a href="https://api.whatsapp.com/send?phone=3017712455&text=¿Qué servicios ofrecen?" target="_blank">
-
-          <img src="img/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt="">
-
-        </a>
-
-        <a href="https://www.messenger.com/t/1520236682" target="_blank">
-
-          <img src="img/icon-messenger.png" alt="" title="Enviar mensaje por Messenger">
-
-        </a>
-
-      </div>
-
-    </div>
-  </header>
-
-  <main>
-    <!-- <div class="container-fluid bg-secondary" style="height: 50px;"></div> -->
-
-    
-    <div class="container my-5 pt-4">
-      <section id="tecnologias">
-        <div class="text-center mb-5 col-md-10 mx-auto">
-          <h2 class="font-weight-bold display-4 ">Tecnologías <span style="color: #17a2b8">Usadas</span></h2>
         </div>
 
-        <div class="row">
-          <!-- <h2>Carrousel Projects</h2> -->
-          <div class="content-all">
-            <div class="content-carrousel">
-              <figure><img src="img/Vs.png"></figure>
-              <figure><img src="img/DotNet.jpg"></figure>
-              <figure><img src="img/Linq.jpg"></figure>
-              <figure><img src="img/Git.png"></figure>
-              <figure><img src="img/VsCode.jpg"></figure>
-              <figure><img src="img/Web.jpg"></figure>
-              <figure><img src="img/Sql.png"></figure>
-              <figure><img src="img/Blazor.png"></figure>
-              <figure><img src="img/Soap.png"></figure>
-            </div>
+        <!--container-redes-sociales-->
+
+        <div class="container-redes">
+
+          <a href="https://api.whatsapp.com/send?phone=3017712455&text=¿Qué servicios ofrecen?" target="_blank">
+
+            <img src="img/icon-whatsapp.png" title="Enviar mensaje de WhatsApp" alt="">
+
+          </a>
+
+          <a href="https://www.messenger.com/t/1520236682" target="_blank">
+
+            <img src="img/icon-messenger.png" alt="" title="Enviar mensaje por Messenger">
+
+          </a>
+
+        </div>
+
+      </div>
+    </header>
+
+    <main>
+      <!-- <div class="container-fluid bg-secondary" style="height: 50px;"></div> -->
+
+
+      <div class="container my-5 pt-4">
+        <section id="tecnologias">
+          <div class="text-center mb-5 col-md-10 mx-auto">
+            <h2 class="font-weight-bold display-4 ">Tecnologías <span style="color: #17a2b8">Usadas</span></h2>
           </div>
-        </div>
-        <br><br><br><br><br><br><br>
-      </div>
-    </section>
 
-
-    <div class="container my-5 pt-4">
-      <section>
-        <div class="text-center mb-5 col-md-10 mx-auto">
-          <h2 class="font-weight-bold display-4 ">Mis <span style="color: #17a2b8">Proyectos</span></h2>
-          <p class="mx-5 text-secondary">Estos 3 servicios son mis fuertes pero si tienes una necesidad diferente puedes
-            contactarme y con gusto te ofrezco una solución adecuada.</p>
-        </div>
-        <div class="row">
-          <div class="col-md-4 my-4 ">
-            <div class="text-primary-hover">
-              <div class="px-3 py-5 bg-gris" style="background-color: #17a2b8; min-height: 330px;">
-                <div
-                  class="font-weight-bold circle rounded-circle d-flex align-items-center justify-content-center mx-auto my-3"
-                  style="width: 60px;height: 60px;">
-                  <img src="https://icons.iconarchive.com/icons/iconoir-team/iconoir/128/code-brackets-square-icon.png" width="128" height="128">
-                </div>
-                <div class="px-3 text-center pb-3">
-                  <h5 class="text-uppercase" style="font-weight: 600">API Rest</h5>
-                  <p class="font-weight-light my-3">La integración permite conectar sus plataformas ya existentes con las nuevas tecnologías.</p>
-                </div>
+          <div class="row">
+            <!-- <h2>Carrousel Projects</h2> -->
+            <div class="content-all">
+              <div class="content-carrousel">
+                <figure><img src="img/VisualStudio.jpg"></figure>
+                <figure><img src="img/DotNet.jpg"></figure>
+                <figure><img src="img/Linq.jpg"></figure>
+                <figure><img src="img/Git2.png"></figure>
+                <figure><img src="img/VsCode.jpg"></figure>
+                <figure><img src="img/Web.jpg"></figure>
+                <figure><img src="img/Sql2.png"></figure>
+                <figure><img src="img/Blazor.png"></figure>
+                <figure><img src="img/Soap.png"></figure>
               </div>
             </div>
           </div>
-          <div class="col-md-4 my-4 ">
-            <div class="text-primary-hover">
-              <div class="px-3 py-5 text-white" style="background-color: #17a2b8; min-height: 330px;">
-                <div
-                  class="font-weight-bold circle rounded-circle d-flex align-items-center justify-content-center mx-auto my-3"
-                  style="width: 60px;height: 60px;">
-                  <img src="https://icons.iconarchive.com/icons/iconoir-team/iconoir/128/code-brackets-square-icon.png" width="128" height="128">
-                </div>
-                <div class="px-3 text-center pb-3">
-                  <h5 class="text-uppercase" style="font-weight: 600">Web Applications</h5>
-                  <p class="font-weight-light my-3">Mi objetivo es desarrollar aplicaciones que fortalezcan la marca de su empresa mientras la hace más accesible y facíl de usar.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 my-4">
-            <div class="text-primary-hover">
-              <div class="px-3 py-5 bg-gris" style="background-color: #17a2b8; min-height: 330px;">
-                <div
-                  class="font-weight-bold circle rounded-circle d-flex align-items-center justify-content-center mx-auto my-3"
-                  style="width: 60px;height: 60px;">
-                  <img src="https://icons.iconarchive.com/icons/iconoir-team/iconoir/128/code-brackets-square-icon.png" width="128" height="128">
-                </div>
-                <div class="px-3 text-center pb-3">
-                  <h5 class="text-uppercase" style="font-weight: 600">Mobile Apps</h5>
-                  <p class="font-weight-light my-3">La portabilidad es un tema importante que su empresa debe suministrar a los usuarios.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <br><br><br><br><br><br><br>
+      </div>
       </section>
-    </div>
+
+
+      <div class="container my-5 pt-4">
+        <section>
+          <div class="text-center mb-5 col-md-10 mx-auto">
+            <h2 class="font-weight-bold display-4 ">Mis <span style="color: #17a2b8">Proyectos</span></h2>
+            <p class="mx-5 text-secondary">Estos 3 servicios son mis fuertes pero si tienes una necesidad diferente
+              puedes
+              contactarme y con gusto te ofrezco una solución adecuada.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-4 my-4 ">
+              <div class="text-primary-hover">
+                <div class="px-3 py-5 bg-gris" style="background-color: #17a2b8; min-height: 330px;">
+                  <div
+                    class="font-weight-bold circle rounded-circle d-flex align-items-center justify-content-center mx-auto my-3"
+                    style="width: 60px;height: 60px;">
+                    <img
+                      src="https://icons.iconarchive.com/icons/iconoir-team/iconoir/128/code-brackets-square-icon.png"
+                      width="128" height="128">
+                  </div>
+                  <div class="px-3 text-center pb-3">
+                    <h5 class="text-uppercase" style="font-weight: 600">API Rest</h5>
+                    <p class="font-weight-light my-3">La integración permite conectar sus plataformas ya existentes con
+                      las nuevas tecnologías.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-4 ">
+              <div class="text-primary-hover">
+                <div class="px-3 py-5 text-white" style="background-color: #17a2b8; min-height: 330px;">
+                  <div
+                    class="font-weight-bold circle rounded-circle d-flex align-items-center justify-content-center mx-auto my-3"
+                    style="width: 60px;height: 60px;">
+                    <img
+                      src="https://icons.iconarchive.com/icons/iconoir-team/iconoir/128/code-brackets-square-icon.png"
+                      width="128" height="128">
+                  </div>
+                  <div class="px-3 text-center pb-3">
+                    <h5 class="text-uppercase" style="font-weight: 600">Web Applications</h5>
+                    <p class="font-weight-light my-3">Mi objetivo es desarrollar aplicaciones que fortalezcan la marca
+                      de su empresa mientras la hace más accesible y facíl de usar.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 my-4">
+              <div class="text-primary-hover">
+                <div class="px-3 py-5 bg-gris" style="background-color: #17a2b8; min-height: 330px;">
+                  <div
+                    class="font-weight-bold circle rounded-circle d-flex align-items-center justify-content-center mx-auto my-3"
+                    style="width: 60px;height: 60px;">
+                    <img
+                      src="https://icons.iconarchive.com/icons/iconoir-team/iconoir/128/code-brackets-square-icon.png"
+                      width="128" height="128">
+                  </div>
+                  <div class="px-3 text-center pb-3">
+                    <h5 class="text-uppercase" style="font-weight: 600">Mobile Apps</h5>
+                    <p class="font-weight-light my-3">La portabilidad es un tema importante que su empresa debe
+                      suministrar a los usuarios.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
 
 
 
 
-    <!-- <section id="galeria">
+      <!-- <section id="galeria">
       <div class="container-fluid d-flex flex-column justify-content-center contenedor2">
         <div class="col-12 d-flex flex-row justify-content-between mw-100 flex-wrap">
           <div class="a1">
@@ -1415,32 +1426,197 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
 
 
 
-    <section id="proyectos" class="col-md-10" style="margin: auto;">
-      <div class="container-fluid my-6">
-        <div class="text-center mb-5">
-          <h1 class="text-capitalize font-weight-bold mt-2">Conoce <span style="color:#17a2b8">Mis Proyectos</span></h1>
-        </div>
-        <div class="row">
-          <div class="col-md-4 p-4">
-            <div class="border">
-              <div class="position-relative w-100"
-                style="height: 250px;background-image: url(img/Sales_Der.png); background-size: cover; background-position: center;">
-                <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;"></div>
-                <div
-                  class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
-                  style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
-                  <small>¡PROMO!</small>
+      <section id="proyectos" class="col-md-10" style="margin: auto;">
+        <div class="container-fluid my-6">
+          <div class="text-center mb-5">
+            <h1 class="text-capitalize font-weight-bold mt-2">Conoce <span style="color:#17a2b8">Mis Proyectos</span>
+            </h1>
+          </div>
+          <div class="row">
+            <div class="col-md-4 p-4">
+              <div class="border">
+                <div class="position-relative w-100"
+                  style="height: 250px;background-image: url(img/BlazorPage.png); background-size: cover; background-position: center;">
+                  <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;">
+                  </div>
+                  <div
+                    class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
+                    style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
+                    <small>Blazor</small>
+                    <small>.NET Core</small>
+                    <small>7</small>
+                  </div>
+                  <span class="position-absolute px-3 py-2 text-white"
+                    style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Administración Ventas</small>
+                  </span>
                 </div>
-                <span class="position-absolute px-3 py-2 text-white"
-                  style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Analisis</small></span>
+                <div class="px-3 pt-4 pb-3">
+                  <span href="#" class="d-inline-block">
+                    <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Aplicación de Ventas</h4>
+                  </span>
+                  <p class="tex-secondary">Aplicación creada con C#, .NET, API REST, Blazor y SQL, es una solución completa para gestionar usuarios, 
+                    productos y ventas de manera eficiente y segura. Con una interfaz moderna y funcionalidades avanzadas, facilita el control y 
+                    seguimiento de todas las operaciones comerciales..
+                  </p>
+
+                  <div class="mt-0">
+                    <a id="toastbtn" href="https://gitlab.com/Jorge_machado/sales2023" target="_blank" class="btn px-4 py-2 text-white mt-3 mt-sm-0"
+                      style="background-color: #000000!important; border-radius: 20px;"><strong
+                        style="font-size: 1.3rem;">GitLab</strong></a>
+                  </div>
+                  <!-- <div class="d-flex mt-4">
+                    <div class="d-flex align-items-center mr-4">
+                      <small class="mt-1" style="color: #17a2b8;"><b>Entre $40.00 y $80.00</b></small>
+                    </div> -->
+                    <!-- <a href="https://api.whatsapp.com/send?phone=50377499909&text=Hola,%20%20vi%20tu%20sitio%20web%20y%20quiero%20una%20cotizacion."
+                      target="_blank">
+                      <div class="d-flex align-items-center ms-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00695c"
+                          class="bi bi-github" viewBox="0 0 16 16" style="color: white; margin-right: 0.2rem;">
+                          <path
+                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                        </svg>
+                        <small class="mt-1" style="color: #00695c;">Cotiza tu evento</small> -->
+                        <!-- <a class="nav-link" href="https://gitlab.com/Jorge_machado/sales2023" target="_blank">GitLab</a> -->
+                        <!-- <small class="mt-1" style="color: #17a2b8;"><b><a class="link" href="https://gitlab.com/Jorge_machado/sales2023" target="_blank">GitLab</a></b></small>
+                      
+                    </a>
+                  </div> 
+                </div> -->
               </div>
-              <div class="px-3 pt-4 pb-3">
-                <span href="#" class="d-inline-block">
-                  <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Analisis de requerimientos</h4>
-                </span>
-                <p class="tex-secondary">Ideal para restaurantes que quieren darse a conocer en redes sociales. Precios
-                  varian según necesidad.</p>
-               <div class="d-flex mt-4">
+            </div>
+            </div>
+            <div class="col-md-4 p-4">
+              <div class="border">
+                <div class="position-relative w-100"
+                  style="height: 250px;background-image: url(img/Codigo.png); background-size: cover; background-position: center;">
+                  <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;">
+                  </div>
+                  <div
+                    class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
+                    style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
+                    <small>MVC</small>
+                    <small>.NET</small>
+                  </div>
+                  <span class="position-absolute px-3 py-2 text-white"
+                    style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Municipios y Departamentos</small>
+                  </span>
+                </div>
+                <div class="px-3 pt-4 pb-3">
+                  <span href="#" class="d-inline-block">
+                    <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Codificación de
+                      aplicaciones</h4>
+                  </span>
+                  <p class="tex-secondary">Aplicación creada con C#, .NET, API REST, Blazor y SQL, es una solución completa para gestionar usuarios, 
+                    productos y ventas de manera eficiente y segura. Con una interfaz moderna y funcionalidades avanzadas, facilita el control y 
+                    seguimiento de todas las operaciones comerciales..
+                  </p>
+
+                  <div class="mt-0">
+                    <a id="toastbtn" href="https://gitlab.com/Jorge_machado/sales2023" target="_blank" class="btn px-4 py-2 text-white mt-3 mt-sm-0"
+                      style="background-color: #000000!important; border-radius: 20px;"><strong
+                        style="font-size: 1.3rem;">GitLab</strong></a>
+                  </div>
+                  <!-- <div class="d-flex mt-4">
+                    <div class="d-flex align-items-center mr-4">
+                      <small class="mt-1" style="color: #17a2b8;"><b>Entre $100.00 y $250.00</b></small>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=50377499909&text=Hola,%20%20vi%20tu%20sitio%20web%20y%20quiero%20una%20cotizacion."
+                      target="_blank">
+                      <div class="d-flex align-items-center ms-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00695c"
+                          class="bi bi-whatsapp" viewBox="0 0 16 16" style="color: white; margin-right: 0.2rem;">
+                          <path
+                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                        </svg>
+                        <small class="mt-1" style="color: #00695c;">Cotiza tu evento</small>
+                        <a class="nav-link" href="https://gitlab.com/Jorge_machado/sales2023" target="_blank">Proyectos</a>
+                      </div>
+                    </a>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 p-4">
+              <div class="border">
+                <div class="position-relative w-100"
+                  style="height: 250px;background-image: url(img/Test.png); background-size: cover; background-position: center;">
+                  <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;">
+                  </div>
+                  <div
+                    class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
+                    style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
+                    <small>Angular</small>
+                    <small>.NET Core</small>
+                  </div>
+                  <span class="position-absolute px-3 py-2 text-white"
+                    style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Ventas</small></span>
+                </div>
+                <div class="px-3 pt-4 pb-3">
+                  <span href="#" class="d-inline-block">
+                    <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Pruebas unitarias</h4>
+                  </span>
+                  <p class="tex-secondary">Aplicación creada con C#, .NET, API REST, Blazor y SQL, es una solución completa para gestionar usuarios, 
+                    productos y ventas de manera eficiente y segura. Con una interfaz moderna y funcionalidades avanzadas, facilita el control y 
+                    seguimiento de todas las operaciones comerciales..
+                  </p>
+
+                  <div class="mt-0">
+                    <a id="toastbtn" href="https://gitlab.com/Jorge_machado/sales2023" target="_blank" class="btn px-4 py-2 text-white mt-3 mt-sm-0"
+                      style="background-color: #000000!important; border-radius: 20px;"><strong
+                        style="font-size: 1.3rem;">GitLab</strong></a>
+                  </div>
+                  <!-- <div class="d-flex mt-4">
+                  <div class="d-flex align-items-center mr-4">
+                    <small class="mt-1" style="color: #17a2b8;"><b>Entre $100.00 y $250.00</b></small>
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=50377499909&text=Hola,%20%20vi%20tu%20sitio%20web%20y%20quiero%20una%20cotizacion."
+                    target="_blank">
+                    <div class="d-flex align-items-center ms-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00695c"
+                        class="bi bi-whatsapp" viewBox="0 0 16 16" style="color: white; margin-right: 0.2rem;">
+                        <path
+                          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                      </svg>
+                      <small class="mt-1" style="color: #00695c;">Cotiza tu evento</small>
+                    </div>
+                  </a>
+                </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 p-4">
+              <div class="border">
+                <div class="position-relative w-100"
+                  style="height: 250px;background-image: url(img/Sales_Der.png); background-size: cover; background-position: center;">
+                  <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;">
+                  </div>
+                  <div
+                    class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
+                    style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
+                    <small>Xamarin</small>
+                    <small>.NET</small>
+                  </div>
+                  <span class="position-absolute px-3 py-2 text-white"
+                    style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Citas Médicas</small></span>
+                </div>
+                <div class="px-3 pt-4 pb-3">
+                  <span href="#" class="d-inline-block">
+                    <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Analisis de
+                      requerimientos</h4>
+                  </span>
+                  <p class="tex-secondary">Ideal para restaurantes que quieren darse a conocer en redes sociales.
+                    Precios varian según necesidad.
+                  </p>
+
+                  <div class="mt-0">
+                    <a id="toastbtn" href="https://gitlab.com/Jorge_machado/sales2023" target="_blank" class="btn px-4 py-2 text-white mt-3 mt-sm-0"
+                      style="background-color: #000000!important; border-radius: 20px;"><strong
+                        style="font-size: 1.3rem;">GitLab</strong></a>
+                  </div>
+                  <!-- <div class="d-flex mt-4">
                   <div class="d-flex align-items-center mr-4">
                     <small class="mt-1" style="color: #17a2b8;"><b>Entre $40.00 y $80.00</b></small>
                   </div>
@@ -1455,68 +1631,41 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
                       <small class="mt-1" style="color: #00695c;">Cotiza tu evento</small>
                     </div>
                   </a>
+                </div> -->
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 p-4">
-            <div class="border">
-              <div class="position-relative w-100"
-                style="height: 250px;background-image: url(img/Codigo.png); background-size: cover; background-position: center;">
-                <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;"></div>
-                <div
-                  class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
-                  style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
-                  <small>¡PROMO!</small>
-                </div>
-                <span class="position-absolute px-3 py-2 text-white"
-                  style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Desarrollo</small></span>
-              </div>
-              <div class="px-3 pt-4 pb-3">
-                <span href="#" class="d-inline-block">
-                  <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Codificación de aplicaciones</h4>
-                </span>
-                <p class="tex-secondary">Si buscas inmortalizar los recuerdos de tu boda puedes contar con mi
-                  profesionalismo. Precios varian según necesidad.</p>
-                <div class="d-flex mt-4">
-                  <div class="d-flex align-items-center mr-4">
-                    <small class="mt-1" style="color: #17a2b8;"><b>Entre $100.00 y $250.00</b></small>
+            <div class="col-md-4 p-4">
+              <div class="border">
+                <div class="position-relative w-100"
+                  style="height: 250px;background-image: url(img/BlazorPage.png); background-size: cover; background-position: center;">
+                  <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;">
                   </div>
-                  <a href="https://api.whatsapp.com/send?phone=50377499909&text=Hola,%20%20vi%20tu%20sitio%20web%20y%20quiero%20una%20cotizacion."
-                    target="_blank">
-                    <div class="d-flex align-items-center ms-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00695c"
-                        class="bi bi-whatsapp" viewBox="0 0 16 16" style="color: white; margin-right: 0.2rem;">
-                        <path
-                          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                      </svg>
-                      <small class="mt-1" style="color: #00695c;">Cotiza tu evento</small>
-                    </div>
-                  </a>
+                  <div
+                    class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
+                    style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
+                    <small>C#</small>
+                    <small>Console</small>
+                    <small>App</small>
+                  </div>
+                  <span class="position-absolute px-3 py-2 text-white"
+                    style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Conversación IA</small></span>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 p-4">
-            <div class="border">
-              <div class="position-relative w-100"
-                style="height: 250px;background-image: url(img/Test.png); background-size: cover; background-position: center;">
-                <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;"></div>
-                <div
-                  class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
-                  style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
-                  <small>¡PROMO!</small>
-                </div>
-                <span class="position-absolute px-3 py-2 text-white"
-                  style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Testing</small></span>
-              </div>
-              <div class="px-3 pt-4 pb-3">
-                <span href="#" class="d-inline-block">
-                  <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Pruebas unitarias</h4>
-                </span>
-                <p class="tex-secondary">También disponible para cubrir todo tipo de eventos sociales con cobertura
-                  completa. Precios varian según necesidad.</p>
-                <!-- <div class="d-flex mt-4">
+                <div class="px-3 pt-4 pb-3">
+                  <span href="#" class="d-inline-block">
+                    <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Codificación de
+                      aplicaciones</h4>
+                  </span>
+                  <p class="tex-secondary">Si buscas inmortalizar los recuerdos de tu boda puedes contar con mi
+                    profesionalismo. Precios varian según necesidad.
+                  </p>
+
+                  <div class="mt-0">
+                    <a id="toastbtn" href="https://gitlab.com/Jorge_machado/sales2023" target="_blank" class="btn px-4 py-2 text-white mt-3 mt-sm-0"
+                      style="background-color: #000000!important; border-radius: 20px;"><strong
+                        style="font-size: 1.3rem;">GitLab</strong></a>
+                  </div>
+                  <!-- <div class="d-flex mt-4">
                   <div class="d-flex align-items-center mr-4">
                     <small class="mt-1" style="color: #17a2b8;"><b>Entre $100.00 y $250.00</b></small>
                   </div>
@@ -1532,31 +1681,88 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
                     </div>
                   </a>
                 </div> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 p-4">
+              <div class="border">
+                <div class="position-relative w-100"
+                  style="height: 250px;background-image: url(img/BlazorPage.png); background-size: cover; background-position: center;">
+                  <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;">
+                  </div>
+                  <div
+                    class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
+                    style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
+                    <small>.NET</small>
+                    <small>API Rest</small>
+                  </div>
+                  <span class="position-absolute px-3 py-2 text-white"
+                    style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Management Library</small></span>
+                </div>
+                <div class="px-3 pt-4 pb-3">
+                  <span href="#" class="d-inline-block">
+                    <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Pruebas unitarias</h4>
+                  </span>
+                  <p class="tex-secondary">También disponible para cubrir todo tipo de eventos sociales con cobertura
+                    completa. Precios varian según necesidad.
+                  </p>
+
+                  <div class="mt-0">
+                    <a id="toastbtn" href="https://gitlab.com/Jorge_machado/sales2023" target="_blank" class="btn px-4 py-2 text-white mt-3 mt-sm-0"
+                      style="background-color: #000000!important; border-radius: 20px;"><strong
+                        style="font-size: 1.3rem;">GitLab</strong></a>
+                  </div>
+                  <!-- <div class="d-flex mt-4">
+                  <div class="d-flex align-items-center mr-4">
+                    <small class="mt-1" style="color: #17a2b8;"><b>Entre $100.00 y $250.00</b></small>
+                  </div>
+                  <a href="https://api.whatsapp.com/send?phone=50377499909&text=Hola,%20%20vi%20tu%20sitio%20web%20y%20quiero%20una%20cotizacion."
+                    target="_blank">
+                    <div class="d-flex align-items-center ms-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#00695c"
+                        class="bi bi-whatsapp" viewBox="0 0 16 16" style="color: white; margin-right: 0.2rem;">
+                        <path
+                          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                      </svg>
+                      <small class="mt-1" style="color: #00695c;">Cotiza tu evento</small>
+                    </div>
+                  </a>
+                </div> -->
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 p-4">
-            <div class="border">
-              <div class="position-relative w-100"
-                style="height: 250px;background-image: url(img/BlazorPage.png); background-size: cover; background-position: center;">
-                <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;"></div>
-                <div
-                  class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
-                  style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
-                  <small>¡PROMO!</small>
+          <div class="row">
+            <div class="col-md-4 p-4">
+              <div class="border">
+                <div class="position-relative w-100"
+                  style="height: 250px;background-image: url(img/Sales_Der.png); background-size: cover; background-position: center;">
+                  <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;">
+                  </div>
+                  <div
+                    class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
+                    style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
+                    <small>Xamarin</small>
+                    <small>.NET</small>
+                  </div>
+                  <span class="position-absolute px-3 py-2 text-white"
+                    style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Bibles Search</small></span>
                 </div>
-                <span class="position-absolute px-3 py-2 text-white"
-                  style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Analisis</small></span>
-              </div>
-              <div class="px-3 pt-4 pb-3">
-                <span href="#" class="d-inline-block">
-                  <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Analisis de requerimientos</h4>
-                </span>
-                <p class="tex-secondary">Ideal para restaurantes que quieren darse a conocer en redes sociales. Precios
-                  varian según necesidad.</p>
-                <!-- <div class="d-flex mt-4">
+                <div class="px-3 pt-4 pb-3">
+                  <span href="#" class="d-inline-block">
+                    <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Analisis de
+                      requerimientos</h4>
+                  </span>
+                  <p class="tex-secondary">Ideal para restaurantes que quieren darse a conocer en redes sociales.
+                    Precios varian según necesidad.
+                  </p>
+
+                  <div class="mt-0">
+                    <a id="toastbtn" href="https://gitlab.com/Jorge_machado/sales2023" target="_blank" class="btn px-4 py-2 text-white mt-3 mt-sm-0"
+                      style="background-color: #000000!important; border-radius: 20px;"><strong
+                        style="font-size: 1.3rem;">GitLab</strong></a>
+                  </div>
+                  <!-- <div class="d-flex mt-4">
                   <div class="d-flex align-items-center mr-4">
                     <small class="mt-1" style="color: #17a2b8;"><b>Entre $40.00 y $80.00</b></small>
                   </div>
@@ -1572,29 +1778,38 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
                     </div>
                   </a>
                 </div> -->
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 p-4">
-            <div class="border">
-              <div class="position-relative w-100"
-                style="height: 250px;background-image: url(img/BlazorPage.png); background-size: cover; background-position: center;">
-                <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;"></div>
-                <div
-                  class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
-                  style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
-                  <small>¡PROMO!</small>
+            <div class="col-md-4 p-4">
+              <div class="border">
+                <div class="position-relative w-100"
+                  style="height: 250px;background-image: url(img/BlazorPage.png); background-size: cover; background-position: center;">
+                  <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;">
+                  </div>
+                  <div
+                    class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
+                    style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
+                    <small>WCF</small>
+                    <small>SOAP</small>
+                  </div>
+                  <span class="position-absolute px-3 py-2 text-white"
+                    style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Conversación IA</small></span>
                 </div>
-                <span class="position-absolute px-3 py-2 text-white"
-                  style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Desarrollo</small></span>
-              </div>
-              <div class="px-3 pt-4 pb-3">
-                <span href="#" class="d-inline-block">
-                  <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Codificación de aplicaciones</h4>
-                </span>
-                <p class="tex-secondary">Si buscas inmortalizar los recuerdos de tu boda puedes contar con mi
-                  profesionalismo. Precios varian según necesidad.</p>
-                <!-- <div class="d-flex mt-4">
+                <div class="px-3 pt-4 pb-3">
+                  <span href="#" class="d-inline-block">
+                    <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Administración de Usuarios</h4>
+                  </span>
+                  <p class="tex-secondary">Si buscas inmortalizar los recuerdos de tu boda puedes contar con mi
+                    profesionalismo. Precios varian según necesidad.
+                  </p>
+
+                  <div class="mt-0">
+                    <a id="toastbtn" href="https://gitlab.com/Jorge_machado/sales2023" target="_blank" class="btn px-4 py-2 text-white mt-3 mt-sm-0"
+                      style="background-color: #000000!important; border-radius: 20px;"><strong
+                        style="font-size: 1.3rem;">GitLab</strong></a>
+                  </div>
+                  <!-- <div class="d-flex mt-4">
                   <div class="d-flex align-items-center mr-4">
                     <small class="mt-1" style="color: #17a2b8;"><b>Entre $100.00 y $250.00</b></small>
                   </div>
@@ -1610,29 +1825,38 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
                     </div>
                   </a>
                 </div> -->
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 p-4">
-            <div class="border">
-              <div class="position-relative w-100"
-                style="height: 250px;background-image: url(img/BlazorPage.png); background-size: cover; background-position: center;">
-                <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;"></div>
-                <div
-                  class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
-                  style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
-                  <small>¡PROMO!</small>
+            <div class="col-md-4 p-4">
+              <div class="border">
+                <div class="position-relative w-100"
+                  style="height: 250px;background-image: url(img/BlazorPage.png); background-size: cover; background-position: center;">
+                  <div class="position-absolute bg-dark" style="opacity: .3; top: 0; left:0; right: 0; bottom: 0;">
+                  </div>
+                  <div
+                    class="position-absolute text-white d-flex flex-column justify-content-center align-items-center rounded-circle"
+                    style="top:10px; right:10px; width: 70px; height: 70px; background-color: #17a2b8;">
+                    <small>.NET</small>
+                    <small>React</small>
+                  </div>
+                  <span class="position-absolute px-3 py-2 text-white"
+                    style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>CRUD Básico</small></span>
                 </div>
-                <span class="position-absolute px-3 py-2 text-white"
-                  style="bottom:10px; left: 10px; background-color: #17a2b8;"><small>Testing</small></span>
-              </div>
-              <div class="px-3 pt-4 pb-3">
-                <span href="#" class="d-inline-block">
-                  <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">Pruebas unitarias</h4>
-                </span>
-                <p class="tex-secondary">También disponible para cubrir todo tipo de eventos sociales con cobertura
-                  completa. Precios varian según necesidad.</p>
-                <!-- <div class="d-flex mt-4">
+                <div class="px-3 pt-4 pb-3">
+                  <span href="#" class="d-inline-block">
+                    <h4 class="text-primary-hover" style="font-weight: 600; font-size: 1.1rem;">CRUD Básico</h4>
+                  </span>
+                  <p class="tex-secondary">También disponible para cubrir todo tipo de eventos sociales con cobertura
+                    completa. Precios varian según necesidad.
+                  </p>
+
+                  <div class="mt-0">
+                    <a id="toastbtn" href="https://gitlab.com/Jorge_machado/sales2023" target="_blank" class="btn px-4 py-2 text-white mt-3 mt-sm-0"
+                      style="background-color: #000000!important; border-radius: 20px;"><strong
+                        style="font-size: 1.3rem;">GitLab</strong></a>
+                  </div>
+                  <!-- <div class="d-flex mt-4">
                   <div class="d-flex align-items-center mr-4">
                     <small class="mt-1" style="color: #17a2b8;"><b>Entre $100.00 y $250.00</b></small>
                   </div>
@@ -1648,12 +1872,12 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
                     </div>
                   </a>
                 </div> -->
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
 
 
@@ -1661,7 +1885,7 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
 
 
 
-    <!-- <div class="container-fluid" style="height: 10px;"></div>
+      <!-- <div class="container-fluid" style="height: 10px;"></div>
     <section id="contacto" class="container-fluid">
 
       <div class="whatsapp" style="margin: auto;">
@@ -1717,188 +1941,184 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
 
 
 
-    <div class="container mt-5 pb-4">
+      <div class="container mt-5 pb-4">
 
-      <!-- Toast -->
-      <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-        <div id="liveToast" class="toast hide rounded-3" role="alert" aria-live="assertive" aria-atomic="true"
-          style="width: 240px!important;">
-          <div class="toast-header rounded-top"
-            style="background-color: #00695c; width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
-            <div class="d-flex flex-column container justify-content-start">
-              <div><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
-                  class="bi bi-whatsapp" viewBox="0 0 16 16" style="color: white; margin-right: 0.3rem;">
-                  <path
-                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                </svg><strong style="color: white;">What's App</strong></div>
-              <small class="ms-2 mt-1" style="color: #ebebeb;">Jorge Machado</small>
+        <!-- Toast -->
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+          <div id="liveToast" class="toast hide rounded-3" role="alert" aria-live="assertive" aria-atomic="true"
+            style="width: 240px!important;">
+            <div class="toast-header rounded-top"
+              style="background-color: #00695c; width: 100%; display: flex; flex-direction: row; justify-content: space-between;">
+              <div class="d-flex flex-column container justify-content-start">
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                    class="bi bi-whatsapp" viewBox="0 0 16 16" style="color: white; margin-right: 0.3rem;">
+                    <path
+                      d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                  </svg><strong style="color: white;">What's App</strong></div>
+                <small class="ms-2 mt-1" style="color: #ebebeb;">Jorge Machado</small>
+              </div>
+              <button type="button" class="btn-close me-1" data-bs-dismiss="toast" aria-label="Close"
+                style="background-color: white;"></button>
             </div>
-            <button type="button" class="btn-close me-1" data-bs-dismiss="toast" aria-label="Close"
-              style="background-color: white;"></button>
-          </div>
-          <div class="toast-body" style=" height: 140px!important;">
-            <p
-              style="background-color: white; padding-left: 1rem; border-radius: 8px; padding-top: 0.2rem; padding-bottom: 0.2rem; margin-top: 0.5rem; margin-bottom: 0.4rem!important; width: auto;">
-              Hola soy Jorge Machado desarrollador de software</p>
-            <p
-              style="background-color: white; padding-left: 1rem; border-radius: 8px; padding-top: 0.2rem; padding-bottom: 0.2rem; width: auto;">
-              ¿Que servicio necesitas?</p>
-          </div>
-          <div class="d-flex flex-column justify-content-center align-items-center rounded-bottom"
-            style="height: 40px; background-color: #00695c; width: 100%;"><a
-              href="https://api.whatsapp.com/send?phone=3017712455&text=Hola,%20%20vi%20tu%20sitio%20web%20y%20quiero%20una%20cotización."
-              target="_blank"><button type="button" class="btn btn-outline-light btn-sm">RESPONDER</button></a></div>
+            <div class="toast-body" style=" height: 140px!important;">
+              <p
+                style="background-color: white; padding-left: 1rem; border-radius: 8px; padding-top: 0.2rem; padding-bottom: 0.2rem; margin-top: 0.5rem; margin-bottom: 0.4rem!important; width: auto;">
+                Hola soy Jorge Machado desarrollador de software</p>
+              <p
+                style="background-color: white; padding-left: 1rem; border-radius: 8px; padding-top: 0.2rem; padding-bottom: 0.2rem; width: auto;">
+                ¿Que servicio necesitas?</p>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center rounded-bottom"
+              style="height: 40px; background-color: #00695c; width: 100%;"><a
+                href="https://api.whatsapp.com/send?phone=3017712455&text=Hola,%20%20vi%20tu%20sitio%20web%20y%20quiero%20una%20cotización."
+                target="_blank"><button type="button" class="btn btn-outline-light btn-sm">RESPONDER</button></a></div>
 
+          </div>
         </div>
+
       </div>
 
-    </div>
 
 
 
+      <footer class="bg-dark pt-5 mt-5">
+        <div class="container">
+          <!-- About and Newsletter START -->
+          <div id="redes" class="row pt-2 pb-3" style="flex-wrap: wrap-reverse;">
+            <div class="col-md-8 d-flex flex-row justify-content-around align-items-center">
 
-    <footer class="bg-dark pt-5 mt-5">
-      <div class="container">
-        <!-- About and Newsletter START -->
-        <div id="redes" class="row pt-2 pb-3" style="flex-wrap: wrap-reverse;">
-          <div class="col-md-8 d-flex flex-row justify-content-around align-items-center">
+              <a href="https://www.youtube.com/@MatrixCreators" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="36" height="36" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg></a>
 
-            <a href="https://www.youtube.com/@MatrixCreators" target="_blank"><svg
-                xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-facebook"
-                viewBox="0 0 16 16">
-                <path
-                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-              </svg></a>
+              <a href="https://www.youtube.com/@MatrixCreators" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="36" height="36" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg></a>
 
-            <a href="https://www.youtube.com/@MatrixCreators" target="_blank"><svg
-                xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-instagram"
-                viewBox="0 0 16 16">
-                <path
-                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-              </svg></a>
+              <a href="https://www.youtube.com/@MatrixCreators" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="36" height="36" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                  <path
+                    d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" />
+                </svg></a>
 
-            <a href="https://www.youtube.com/@MatrixCreators" target="_blank"><svg
-                xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-tiktok"
-                viewBox="0 0 16 16">
-                <path
-                  d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" />
-              </svg></a>
+              <a href="https://www.youtube.com/@MatrixCreators" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="36" height="36" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                  <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                </svg></a>
 
-            <a href="https://www.youtube.com/@MatrixCreators" target="_blank"><svg
-                xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-whatsapp"
-                viewBox="0 0 16 16">
-                <path
-                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-              </svg></a>
-
-          </div>
-          <div class="col-md-4" style="text-align: center;">
-            <span class="text-secondary text-uppercase">Redes Sociales</span>
-            <h1 class="font-weight-bold text-capitalize" style="color: white;">Sígueme en <span
-                style="color:#17a2b8">mis Redes</span></h1>
-          </div>
-        </div>
-        <!-- About and Newsletter END -->
-        <!-- Divider -->
-        <hr>
-
-
-
-
-
-
-
-
-
-
-        <!-- Widgets START -->
-        <div class="row pt-5 align-items-center">
-          <!-- Footer Widget -->
-          <div class="col-md-4 mb-4 d-flex flex-column align-items-center">
-            <h5 class="mb-4 text-white">Relacionado</h5>
-            <!-- Item -->
-            <div class="mb-4 position-relative d-flex flex-column align-items-center">
-              <div><a href="https://www.youtube.com/channel/UCElt2hNUYZKDHSZY1qmbZUQ" class="badge bg-info mb-2"><svg
-                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-circle-fill me-2 small2" viewBox="0 0 16 16">
-                    <circle cx="8" cy="8" r="8"></circle>
-                  </svg>MatrixCreators</a></div>
-
-              <iframe width="280" height="158" src="https://www.youtube.com/embed/oktQsrMeo48"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-              </iframe>
-
-              <span class="text-white fw-normal text-center">Cómo crear webapp MVC</span>
-              <ul class="nav nav-divider d-flex flex-row justify-content-start small mt-2 text-muted">
-                <li class="nav-item position-relative">
-                  <div><span>by Jorge Machado
-                    </span></div>
-                </li>
-                <li class="nav-item ms-2">Ago 25, 2020</li>
-              </ul>
+            </div>
+            <div class="col-md-4" style="text-align: center;">
+              <span class="text-secondary text-uppercase">Redes Sociales</span>
+              <h1 class="font-weight-bold text-capitalize" style="color: white;">Sígueme en <span
+                  style="color:#17a2b8">mis Redes</span></h1>
             </div>
           </div>
-          <!-- Footer Widget -->
-          <div class="col-md-4 mb-4 text-center">
-            <h5 class="mb-4 text-white">¿Qué es Matrix Creators?</h5>
-            <div class="w-100">
-              <p class="text-muted w-100">Compartimos tutoriales sobre desarrollo de software para que
-                tod@s aprendan.</p>
-            </div>
-            <div class="row g-2">
-              <div class="w-100 d-flex flex-row justify-content-center">
-                <a href="https://www.youtube.com/@MatrixCreators" target="_blank"
-                  class="badge bg-danger mb-2">Suscríbete</a>
-              </div>
-            </div>
-          </div>
+          <!-- About and Newsletter END -->
+          <!-- Divider -->
+          <hr>
 
-          <!-- Footer Widget -->
-          <div class="col-md-4 mb-4 text-center">
-            <h5 class="mb-4 text-white">Otras Redes</h5>
-            <div class="row">
-              <div class="col-12">
-                <ul class="nav flex-column text-primary-hover">
-                  <li class="nav-item"><a class="nav-link pt-0" target="_blank"
-                      href="https://www.youtube.com/@MatrixCreators">Canal youtube</a></li>
-                  <li class="nav-item"><a class="nav-link" target="_blank"
-                      href="https://www.youtube.com/@MatrixCreators">Github</a></li>
-                  <li class="nav-item"><a class="nav-link" target="_blank"
-                      href="https://www.youtube.com/@MatrixCreators">Gitlab</a></li>
-                  <li class="nav-item"><a class="nav-link" target="_blank"
-                      href="https://www.youtube.com/@MatrixCreators">Google sites</a></li>
+
+
+
+
+
+
+
+
+
+          <!-- Widgets START -->
+          <div class="row pt-5 align-items-center">
+            <!-- Footer Widget -->
+            <div class="col-md-4 mb-4 d-flex flex-column align-items-center">
+              <h5 class="mb-4 text-white">Relacionado</h5>
+              <!-- Item -->
+              <div class="mb-4 position-relative d-flex flex-column align-items-center">
+                <div><a href="https://www.youtube.com/channel/UCElt2hNUYZKDHSZY1qmbZUQ" class="badge bg-info mb-2"><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-circle-fill me-2 small2" viewBox="0 0 16 16">
+                      <circle cx="8" cy="8" r="8"></circle>
+                    </svg>MatrixCreators</a></div>
+
+                <iframe width="280" height="158" src="https://www.youtube.com/embed/oktQsrMeo48"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+
+                <span class="text-white fw-normal text-center">Cómo crear webapp MVC</span>
+                <ul class="nav nav-divider d-flex flex-row justify-content-start small mt-2 text-muted">
+                  <li class="nav-item position-relative">
+                    <div><span>by Jorge Machado
+                      </span></div>
+                  </li>
+                  <li class="nav-item ms-2">Ago 25, 2020</li>
                 </ul>
               </div>
             </div>
+            <!-- Footer Widget -->
+            <div class="col-md-4 mb-4 text-center">
+              <h5 class="mb-4 text-white">¿Qué es Matrix Creators?</h5>
+              <div class="w-100">
+                <p class="text-muted w-100">Compartimos tutoriales sobre desarrollo de software para que
+                  tod@s aprendan.</p>
+              </div>
+              <div class="row g-2">
+                <div class="w-100 d-flex flex-row justify-content-center">
+                  <a href="https://www.youtube.com/@MatrixCreators" target="_blank"
+                    class="badge bg-danger mb-2">Suscríbete</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer Widget -->
+            <div class="col-md-4 mb-4 text-center">
+              <h5 class="mb-4 text-white">Otras Redes</h5>
+              <div class="row">
+                <div class="col-12">
+                  <ul class="nav flex-column text-primary-hover">
+                    <li class="nav-item"><a class="nav-link pt-0" target="_blank"
+                        href="https://www.youtube.com/@MatrixCreators">Canal youtube</a></li>
+                    <li class="nav-item"><a class="nav-link" target="_blank"
+                        href="https://www.youtube.com/@MatrixCreators">Github</a></li>
+                    <li class="nav-item"><a class="nav-link" target="_blank"
+                        href="https://www.youtube.com/@MatrixCreators">Gitlab</a></li>
+                    <li class="nav-item"><a class="nav-link" target="_blank"
+                        href="https://www.youtube.com/@MatrixCreators">Google sites</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- Widgets END -->
+
         </div>
-        <!-- Widgets END -->
-
-      </div>
 
 
-      <!-- Footer copyright START -->
-      <div class="bg-dark-overlay-3 mt-2">
-        <div class="container">
-          <div class="row align-items-center justify-content-md-between py-4">
-            <div class="container-fluid d-flex flex-row justify-content-center">
-              <!-- Copyright -->
-              <div class="text-center text-md-start text-primary-hover text-muted">©2023 <a
-                  href="https://www.youtube.com/@MatrixCreators" target="_blank"
-                  class="text-reset btn-link">JorgeMachado</a>. Derechos Reservados
+        <!-- Footer copyright START -->
+        <div class="bg-dark-overlay-3 mt-2">
+          <div class="container">
+            <div class="row align-items-center justify-content-md-between py-4">
+              <div class="container-fluid d-flex flex-row justify-content-center">
+                <!-- Copyright -->
+                <div class="text-center text-md-start text-primary-hover text-muted">©2023 <a
+                    href="https://www.youtube.com/@MatrixCreators" target="_blank"
+                    class="text-reset btn-link">JorgeMachado</a>. Derechos Reservados
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Footer copyright END -->
-    </footer>
-  </main>
+        <!-- Footer copyright END -->
+      </footer>
+    </main>
 
 
-</div>
+  </div>
 
 
 
@@ -1938,16 +2158,16 @@ html.dark-mode header, html.dark-mode main, html.dark-mode footer {
       prevScrollpos = currentScrollPos;
     }
 
-    
-      function toggleDarkMode() {
-        const htmlElement = document.querySelector('html');
-        htmlElement.classList.toggle('dark-mode');
-      }
+
+    function toggleDarkMode() {
+      const htmlElement = document.querySelector('html');
+      htmlElement.classList.toggle('dark-mode');
+    }
 
 
 
 
-     
+
 
 
 
